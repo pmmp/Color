@@ -117,7 +117,7 @@ final class Color{
 	/**
 	 * Returns a Color from the supplied RGBA colour code (32-bit)
 	 */
-	public static function fromRGBA(int $c) : Color{
+	public static function fromRGBA(int $code) : Color{
 		return new Color(($c >> 24) & 0xff, ($c >> 16) & 0xff, ($c >> 8) & 0xff, $c & 0xff);
 	}
 
