@@ -27,15 +27,10 @@ use function count;
 use function intdiv;
 
 final class Color{
-
-	/** @var int */
-	protected $a;
-	/** @var int */
-	protected $r;
-	/** @var int */
-	protected $g;
-	/** @var int */
-	protected $b;
+	private int $a;
+	private int $r;
+	private int $g;
+	private int $b;
 
 	public function __construct(int $r, int $g, int $b, int $a = 0xff){
 		$this->r = $r & 0xff;
