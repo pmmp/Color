@@ -127,4 +127,11 @@ final class Color{
 	public function toRGBA() : int{
 		return ($this->r << 24) | ($this->g << 16) | ($this->b << 8) | $this->a;
 	}
+
+	/**
+	 * Returns whether the two colors are equivalent.
+	 */
+	public function equals(self $other) : bool{
+		return $this->a === $other->a && $this->r === $other->r && $this->g === $other->g && $this->b === $other->b;
+	}
 }
