@@ -47,7 +47,7 @@ final class Color{
 	}
 
 	/**
-	 * Retuns the red value of this colour.
+	 * Returns the red value of this colour.
 	 */
 	public function getR() : int{
 		return $this->r;
